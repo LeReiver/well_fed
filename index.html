@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Well Fed Adventures</title>
+<link href="wellfed.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('images/udon.jpg')">
+<div id="centerwrap">
+  <div id="header"><a href="index.html"><img src="images/wellfedlogo.png" alt="Well Fed Adventures" name="logo" width="250" height="113" id="logo"></a>
+    <div id="apDiv1"><img src="images/soc-facebook.png" width="30" height="30" alt="Facebook Link"><img src="images/soc-twitter.png" width="30" height="30" alt="Twitter Link"><img src="images/soc-gplus.png" width="30" height="30" alt="Google Plus Link"><img src="images/soc-linkedin.png" width="30" height="30" alt="Linked In Link"></div>
+  </div>
+  <div id="leftcol">
+    <ul id="nav">
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="rightcol"> <img src="images/airplane.jpg" alt="coastline from airplane" width="720" height="380" id="Image1"> </div>
+  <div id="content">
+  <br>
+    <table>
+      <tr>
+        <th align="center">International tours focusing on authentic local cuisine.</th>
+        <th align="center">Educating travelers on cultural traditions.</th>
+        <th align="center">Learn indigenious recipes and cooking techniques.</th>
+      </tr>
+      <tr>
+        <td align="center"><p><img src="images/udon.jpg" alt="bowl of udon" name="udon" width="200" height="200" id="udon"></p></td>
+        <td align="center"><p><img src="images/ceremony2.jpg" alt="Hindu ceremony" name="hindu" width="200" height="200" id="hindu"></p></td>
+        <td align="center"><p><img src="images/cookingclass.jpg" alt="cooking class" name="class1" width="200" height="200" id="class1"></p></td>
+      </tr>
+    </table>
+  </div>
+  <div id="footer">
+    <p><a href="mailto:info@wellfedadventures.com">Email Us</a>&nbsp;&nbsp;&nbsp;Copyright &copy; 2013 Well Fed Adventures</a></p>
+  </div>
+</div>
+</body>
+</html>

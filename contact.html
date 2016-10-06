@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Well Fed Adventures - Contact</title>
+<link href="wellfed.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="centerwrap">
+  <div id="header"><a href="index.html"><img src="images/wellfedlogo.png" alt="Well Fed Adventures" name="logo" width="250" height="113" id="logo"></a>
+    <div id="apDiv1"><img src="images/soc-facebook.png" width="30" height="30" alt="Facebook Link"><img src="images/soc-twitter.png" width="30" height="30" alt="Twitter Link"><img src="images/soc-gplus.png" width="30" height="30" alt="Google Plus Link"><img src="images/soc-linkedin.png" width="30" height="30" alt="Linked In Link"></div>
+  </div>
+  <div id="leftcol">
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="rightcol"> <img src="images/bicycle.jpg" alt="Fruit vendor on bicycle" name="limes" width="720" height="380" id="limes"> </div>
+  <div id="content">
+    <h1>Contact us now for information on how to <br>
+      book your next culinary adventure!</h1>
+    </table>
+    <form name="form1" method="post" action="">
+      <table width="900" id="table3">
+        <tr align="center">
+          <td valign="top"><p>
+            <span id="sprytextfield2">
+            <label for="name4">Your Name:</label>
+            <br>
+            <input name="name2" type="text" id="name4" size="30" maxlength="45">
+            <span class="textfieldRequiredMsg">Please tell us your name.</span></span>
+            <p><span id="sprytextfield1">
+              <label for="email5">Your E-mail:</label>
+              <br>
+              <input name="email" type="text" id="email5" size="30" maxlength="45">
+              <span class="textfieldRequiredMsg">Please tell us your Email.</span></span>
+            
+            <p>
+              <label for="tours">Your Destination:</label>
+              <br>
+              <span id="spryselect1"><span id="spryselect1">
+              <select name="tours" id="tours">
+                <option value="1" selected>Japan</option>
+                <option value="2">Thailand</option>
+                <option value="3">Vietnam</option>
+                <option value="4">Malaysia</option>
+                <option value="5">Europe</option>
+                <option value="6">Central America</option>
+              </select>
+              <span class="selectRequiredMsg">Please select an item.</span></span></p></td>
+          <br>
+          <td align="center" valign="top">Choose Your Travel Dates
+            <h6>From</h6>
+            <label for="fmonth">&nbsp;&nbsp;Month:</label>
+            <input type="text" name="fmonth" id="fmonth">
+            <br>
+            <label for="fday">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Day:</label>
+            <input type="text" name="fday" id="fday">
+            <br>
+            <label for="fyear">&nbsp;&nbsp;&nbsp;Year:</label>
+            <input type="text" name="fyear" id="fyear">
+            <h6>To</h6>
+            <label for="tmonth">&nbsp;&nbsp;Month:</label>
+            <input type="text" name="tmonth" id="tmonth">
+            <br>
+            <label for="tday">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Day:</label>
+            <input type="text" name="tday" id="tday">
+            <br>
+            <label for="tyear">&nbsp;&nbsp;&nbsp;Year:</label>
+            <input type="text" name="tyear" id="tyear"></td>
+          <td valign="top"><label for="questions">
+            <p>Feel Free To Ask Us Questions:</p>
+            </label>
+            <textarea name="questions" cols="30" rows="8" id="questions">Type your questions here...</textarea>
+            </p>
+            <input type="submit" name="submit" id="submit" value="Submit">
+            &nbsp;
+            <input type="reset" name="reset" id="reset" value="Reset"></td>
+          <p>&nbsp;</p>
+        </tr>
+      </table>
+    </form>
+    <table width="900" cellpadding="5">
+      <tr>
+        <td width="250" align="center" valign="middle"><h3>
+            <p><img src="images/grains.jpg" alt="Baskets of grains" name="grains" width="250" height="239" id="grains"></p>
+          </h3></td>
+        <td align="center" valign="middle"><h3>Please email us for information on seasonal specials.</h3>
+          <p><a href="mailto:booknow@wellfedadventures.com">specials@wellfedadventures.com</a></p>
+          <h3 align="center">Well Fed Adventures</h3>
+          <h3 align="center">2538 NE 14th Ave</h3>
+          <h3 align="center">Blingtown, Oregon 97222</h3>
+          <h3 align="center">1-888-274-4428</h3></td>
+        <td width="270" align="center" valign="middle"><img src="images/meats.jpg" alt="BBQ meat in window" name="bbq" width="250" height="239" id="bbq">
+          </th></td>
+      </tr>
+    </table>
+  </div>
+  <div id="footer">
+    <p><a href="mailto:info@wellfedadventures.com">Email Us</a>&nbsp;&nbsp;&nbsp;Copyright &copy; 2013 Well Fed Adventures</a></p>
+  </div>
+</div>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "email", {validateOn:["blur"], useCharacterMasking:true});
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {validateOn:["blur"]});
+var spryselect1 = new Spry.Widget.ValidationSelect("spryselect1", {validateOn:["blur"]});
+</script>
+</body>
+</html>
